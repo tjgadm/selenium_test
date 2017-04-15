@@ -1,4 +1,4 @@
-import selenium
+from selenium import webdriver
 from time import sleep
 browser = webdriver.firefox()
 browser.get('http://google.com')
