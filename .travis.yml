@@ -6,6 +6,7 @@ addons:
   firefox: "49.0"
 install:
   - "pip install selenium"
+  - "pip list"
 script: python selenium.py
 notifications:
   email: false
