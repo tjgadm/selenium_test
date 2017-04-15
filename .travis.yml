@@ -1,11 +1,11 @@
 language: python
 python:
-  - "3.3"
+  - "2.7"
 # command to install dependencies
-install:
-  - "pip install selenium"
 addons:
   firefox: "49.0"
+install:
+  - "pip install selenium"
 script: python selenium.py
 notifications:
   email: false
