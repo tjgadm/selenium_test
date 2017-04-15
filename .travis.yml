@@ -2,7 +2,7 @@ language: python
 python:
   - "3.6"
 # command to install dependencies
-install: "pip -v"
+install: "pip -U pip"
 addons:
   firefox: "49.0"
 script: python selenium.py
