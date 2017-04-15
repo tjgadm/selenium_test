@@ -15,6 +15,6 @@ python:
 install: "pip install -r requirements.txt"
   addons:
   firefox: "49.0"
-script: phpunit
+script: selenium.py
 notifications:
   email: false
