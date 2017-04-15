@@ -13,7 +13,7 @@ python:
   - "nightly" # currently points to 3.7-dev
 # command to install dependencies
 install: "pip install -r requirements.txt"
-  addons:
+addons:
   firefox: "49.0"
 script: selenium.py
 notifications:
