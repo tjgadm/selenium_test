@@ -1,4 +1,4 @@
-from selenium import webdriver
+import selenium
 from time import sleep
 browser = webdriver.Chrome()
 browser.get('http://google.com')
