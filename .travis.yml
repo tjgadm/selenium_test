@@ -1,6 +1,7 @@
 language: ruby
-ruby:
-  - "2.2.0"
+rvm:
+  - 2.2
+  - jruby
 # command to install dependencies
 addons:
   firefox: "40.0"
