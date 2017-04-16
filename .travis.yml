@@ -12,7 +12,6 @@ before_script:
   - "wget http://chromedriver.storage.googleapis.com/2.18/chromedriver_linux64.zip"
   - "unzip chromedriver_linux64.zip"
   - "ls"
-  - "mv chromedriver /user/bin"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
@@ -22,7 +21,7 @@ after_success:
   - chmod 600 .travis/deploy_key.pem # this key should have push access
   - ssh-add .travis/deploy_key.pem
   - git remote add deploy 
-  - git push deploy https://github.com/tjgadm/selenium_test/deploy/
+  - git push deploy https://github.com/tjgadm/selenium_test/
 script: ruby selenium.rb
 notifications:
   email: false
