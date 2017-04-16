@@ -1,5 +1,8 @@
+require 'headless'
 require 'selenium-webdriver'
-
-driver = Selenium::WebDriver.for :firefox # ブラウザ起動
-driver.navigate.to 'http://example.com' 
-driver.quit # ブラウザ終
+ 
+Headless.ly do
+  driver = Selenium::WebDriver.for :firefox
+  driver.navigate.to 'http://google.com'
+  puts driver.title
+end
