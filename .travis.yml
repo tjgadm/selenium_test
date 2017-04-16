@@ -21,7 +21,7 @@ after_success:
   - chmod 600 .travis/deploy_key.pem # this key should have push access
   - ssh-add .travis/deploy_key.pem
   - git remote add deploy 
-  - git push deploy https://github.com/tjgadm/selenium_test/
+  - git push deploy https://github.com/tjgadm/selenium_test/deploy/
 script: ruby selenium.rb
 notifications:
   email: false
