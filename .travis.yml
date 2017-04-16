@@ -11,8 +11,7 @@ install:
 before_script:
   - "wget http://chromedriver.storage.googleapis.com/2.18/chromedriver_linux64.zip"
   - "unzip chromedriver_linux64.zip"
-  - "ls"
-  - "which ruby"
+  - "mv chromedriver /home/travis/.rvm/rubies/ruby-2.2.0/bin/ruby"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
