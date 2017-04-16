@@ -11,6 +11,7 @@ install:
 before_script:
   - "wget http://chromedriver.storage.googleapis.com/2.18/chromedriver_linux64.zip"
   - "unzip chromedriver_linux64.zip"
+  - "ls"
   - "mv chromedriver /use/bin"
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
