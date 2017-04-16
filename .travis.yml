@@ -1,6 +1,6 @@
 language: ruby
 ruby:
-  - "2.7"
+  - "3.0"
 # command to install dependencies
 addons:
   firefox: "40.0"
