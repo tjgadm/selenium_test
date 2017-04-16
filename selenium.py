@@ -1,6 +1,6 @@
-from selenium import webdriver
+from selenium import *
 from time import sleep
-#browser = selenium.webdriver.firefox()
+browser = webdriver.firefox()
 #browser.get('http://google.com')
 sleep(1)
-#browser.close()
+browser.close()
